@@ -1,0 +1,26 @@
+{
+  "sales": [
+    {
+      "dni": "982348A",
+      "year": 1987,
+      "wallet": 23948234230498,
+      "products": [
+        {"product": "MonkeyNFT", "price": 200},
+        {"product": "LionNFT", "price": 300}
+      ],
+      "discount": 10,
+      "payment": "ethereum"
+    },
+
+    {
+      "dni": "234234B",
+      "year": 2001,
+      "wallet": 19283729429348,
+      "products": [
+        {"product": "GolemNFT", "price": 150}
+      ],
+      "discount": 20,
+      "payment": "bitcoin"
+    }
+  ]
+}

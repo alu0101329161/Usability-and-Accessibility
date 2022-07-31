@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <!-- Iconos favicon -->
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <!-- Fuente Google -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!--jQuery-->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <link href="./css/style.css" rel="stylesheet">
+  <link href="./css/card-content.css" rel="stylesheet">
+  <title>Ruby</title>
+</head>
+
+<body>
+  <!--Barra de navegación-->
+  <header>
+    <div class="navbar-fixed">
+      <nav role>
+        <div class="nav-wrapper grey darken-4">
+          <a href="./index.html" class="brand-logo">
+            <i class="material-icons" aria-hidden="true">code</i>
+            Ruby's Crypto
+          </a>
+
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger" target="_self"><i
+              class="material-icons">menu</i></a>
+
+          <!--Barra de navegación PC-->
+          <ul class="right hide-on-med-and-down" role="navigation">
+            <li><a href="./wallet.html">Monedero Electrónico</a></li>
+            <li><a href="./news.html">Noticias</a></li>
+            <li><a href="./market.html">Mercado</a></li>
+            <li><a href="./analytics.html">Analíticas</a></li>
+            <li><a href="./register.html">Registrarse</a></li>
+            <li><a href="./about_us.html" class="btn white black-text waves-effect waves-blue-grey lighten-1"
+                role="button" aria-label="Sobre Nosotros">Sobre nosotros</a></li>
+            <!--Agregamos elemnto a la tabulacion + role + label-->
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div>
+      <!--Barra de navegación Móvil-->
+      <ul id="mobile-demo" class="sidenav" tabindex="-1">
+        <li><a aria-expanded="false" tabindex="-1" target="_self" href="./wallet.html">Monedero Electrónico</a></li>
+        <li><a aria-expanded="false" tabindex="-1" target="_self" href="./news.html">Noticias</a></li>
+        <li><a aria-expanded="false" tabindex="-1" target="_self" href="./market.html">Mercado</a></li>
+        <li><a aria-expanded="false" tabindex="-1" target="_self" href="./analytics.html">Analíticas</a></li>
+        <li><a aria-expanded="false" tabindex="-1" target="_self" href="./register.html">Registrarse</a></li>
+        <li><a aria-expanded="false" tabindex="-1" target="_self" href="./about_us.html"
+            class="btn black white-text waves-effect waves-blue-grey lighten-1" role="button"
+            aria-label="Sobre Nosotros">Sobre nosotros</a></li>
+      </ul>
+    </div>
+  </header>
+
+
+
+  <div class="parallax-container">
+    <div tabindex="0" class="parallax"><img class="responsive-img" src="images/cripto1.png"
+        aria-label="Imagen de Criptomoneda"></div>
+    <div class="caption center-align">
+      <div class="card-panel grey darken-4">
+        <element tabindex="0">
+          <h1 class="white-text darken-5 text-lighten-4">Últimas tendencias</h1>
+          <h2 class="white-text darken-5 text-lighten-4">¿Mercado en tendencia ascendente? ¿O sólo rumores?</h2>
+        </element>
+        <a tabindex="0" href="news.html" role="button" aria-label="Acceder a noticias relacionadas con el mercado"
+          class="btn btn-large orange black-text waves-effect waves-grey">Leer</a>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+  <!--Cartas con imágenes-->
+  <div class="row">
+    <div class="col s12 m4 l4">
+      <div class="card horizontal">
+        <div class="card-image">
+          <img class="responsive-img" id="profile" src="./images/Ruby.jpg" alt="Ruby">
+        </div>
+        <div class="card-stacked grey darken-4">
+          <div class="card-content">
+            <element tabindex="0">
+              <h2>
+                Presentamos nueva criptomoneda: RubyCoins
+              </h2>
+              <p class="inicio-text">Tras meses de negociaciones y cosnultas con las entidades de la industria,
+                ¡sacamos nuestra propia criptomoneda!</p>
+            </element>
+          </div>
+          <div class="card-action">
+            <a href="javascript:;" aria-label="Rubycoins, enlace a compra">Enlace a la compra</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col s12 m4 l4">
+      <div class="card horizontal">
+        <div class="card-image">
+          <img class="responsive-img" id="profile" src="./images/NFT7.JPG" alt="nft7">
+        </div>
+        <div class="card-stacked grey darken-4">
+          <div class="card-content">
+            <element tabindex="0">
+              <h2>
+                Promoción exclusiva
+              </h2>
+              <p class="inicio-text">
+                Paquete de NFTs de última generación de mano de
+                <a href="javascript:;">@WillyrexYT</a>
+                . ¡Compra, antes de que se acaben!
+              </p>
+            </element>
+          </div>
+          <div class="card-action">
+            <a href="javascript:;" aria-label="Promoción exclusiva Willyrex, enlace a compra">Enlace a la compra</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col s12 m4 l4">
+      <div class="card horizontal">
+        <div class="card-image">
+          <img class="responsive-img" id="profile" src="./images/oficina.jpg" alt="Imagen de una oficina">
+        </div>
+        <div class="card-stacked grey darken-4">
+          <div class="card-content">
+            <element tabindex="0">
+              <h2>
+                ¿Necesitas ayuda?
+              </h2>
+              <p class="inicio-text">
+                Si tienes alguna duda del sobre la compra o venta de artículos y Tokens,
+                puedes recibir atención de cualquiera de nuestros expertos.
+              </p>
+            </element>
+          </div>
+          <div class="card-action">
+            <a href="javascript:;" aria-label="Enlace a ticket de atención del cliente">Ticket de atención al cliente</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Tabla con las últimas ventas-->
+  <div class="row  grey darken-4">
+    <div class="col s12 m12 l12">
+      <div class="center-align grey-text text-lighten-4">
+        <h2 tabindex="0">Últimas ventas de items:</h2>
+      </div>
+    </div>
+  </div>
+
+  <div class="container center-align" aria-label="Últimos items vendidos">
+    <div class="row">
+      <div class="col s12 m12 l12">
+        <table class="center striped">
+          <thead tabindex="0">
+            <tr class="grey darken-4">
+              <th>Usuarios</th>
+              <th>Objetos</th>
+              <th>Precios</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr tabindex="0" role="row" class="grey darken-3">
+              <td role="cell">RamonGamer</td>
+              <td role="cell">Karambit</td>
+              <td role="cell">$250.50</td>
+            </tr>
+            <tr tabindex="0" role="row" class="grey darken-3">
+              <td role="cell">Alan23</td>
+              <td role="cell">Five-SeveN Orange Peel</td>
+              <td role="cell">$10.76</td>
+            </tr>
+            <tr tabindex="0" role="row" class="grey darken-3">
+              <td role="cell">Ezel</td>
+              <td role="cell">VariCamo Industrial Grade</td>
+              <td role="cell">$180.00</td>
+            </tr>
+            <tr tabindex="0" role="row" class="grey darken-3">
+              <td role="cell">Jonath</td>
+              <td role="cell">Neon Revolution</td>
+              <td role="cell">$12.00</td>
+            </tr>
+            <tr tabindex="0" role="row" class="grey darken-3">
+              <td role="cell">Miguel</td>
+              <td role="cell">Elite Build</td>
+              <td role="cell">$27.62</td>
+            </tr>
+            <tr tabindex="0" role="row" class="grey darken-3">
+              <td role="cell">Vrocoli</td>
+              <td role="cell">Lux Elementalista</td>
+              <td role="cell">$20.00</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <a class="btn waves-effect waves-light orange black-text center" role="button" href="analytics.html">Mirar más
+          ventas</a>
+      </div>
+    </div>
+  </div>
+
+    <!--Tabla con las últimas ventas-->
+    <div class="row red lighten-1 grey darken-4">
+      <div class="col s12 m12 l12">
+        <div class="center-align grey-text text-lighten-4">
+          <h2 tabindex="0">Clubs NFTs:</h2>
+        </div>
+      </div>
+    </div>
+
+  <div class="row">
+    <div class="col s12 m3 l3">
+      <div class="card">
+        <div class="card-image">
+          <img class="responsive-img" id="profile" src="./images/ape1.JPG" alt="ape1" aria-labelledby="apes"
+            aria-describedby="description_apes">
+        </div>
+        <div class="card-stacked grey darken-4">
+          <div class="card-content">
+            <element tabindex="0">
+              <h2 id="apes">Bored Apes</h2>
+              <p class="inicio-text" id="description_apes">Yuga Labs es la empresa matriz de Bored Ape Yacht Club.
+                Visionarios del sector.</p>
+            </element>
+          </div>
+          <div class="card-action">
+            <a href="javascript:;" aria-label="Bored Apes, cómo unirme">Cómo unirme</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col s12 m3 l3">
+      <div class="card">
+        <div class="card-image">
+          <img class="responsive-img" id="profile" src="./images/golem1.png" alt="imagen de golem"
+            aria-labelledby="golems" aria-describedby="description_golems">
+        </div>
+        <div class="card-stacked grey darken-4">
+          <div class="card-content">
+            <element tabindex="0">
+              <h2 id="golems">Rude Golems</h2>
+              <p class="inicio-text" id="description_golems">Rude Golems es una propiedad intelectual. Son figuras de
+                Golem.</p>
+            </element>
+          </div>
+          <div class="card-action">
+            <a href="javascript:;" aria-label="Rude Golems, cómo unirme">Cómo unirme</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col s12 m3 l3">
+      <div class="card">
+        <div class="card-image">
+          <img class="responsive-img" id="profile" src="./images/lions1.jpg" alt="Imagen nft de lion"
+            aria-labelledby="lions" aria-describedby="description_lions">
+        </div>
+        <div class="card-stacked grey darken-4">
+          <div class="card-content">
+            <element tabindex="0">
+              <h2 id="lions">Lazy Lions</h2>
+              <p class="inicio-text" id="description_lions">Comunidad NFT de leones únicos. Uno de los clubes más
+                famosos
+              </p>
+            </element>
+          </div>
+          <div class="card-action">
+            <a href="javascript:;" aria-label="Lazy Lions, cómo unirme">Cómo unirme</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col s12 m3 l3">
+      <div class="card">
+        <div class="card-image">
+          <img class="responsive-img" id="profile" src="./images/punk.png" alt="punk" aria-labelledby="criptopunk"
+            aria-describedby="description_criptopunk">
+        </div>
+        <div class="card-stacked grey darken-4">
+          <div class="card-content">
+            <element tabindex="0">
+              <h2 id="criptopunk">CryptoPunks</h2>
+              <p class="inicio-text" id="description_criptopunk">Uno de los primeros tokens no fungibles en la
+                blockchain
+                de Ethereum.</p>
+            </element>
+          </div>
+          <div class="card-action">
+            <a href="javascript:;" aria-label="Cripto punks, cómo unirme">Cómo unirme</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <!--Botón de accesibilidad-->
+  <div class="fixed-action-btn">
+    <a href="#" class="btn-floating btn-large blue-grey darken-1 pulse" role="button" aria-label="Subir arriba">
+        <i tabindex="0" role="button" class="large material-icons" aria-hidden="true">arrow_upward</i>
+    </a>
+  </div>
+
+
+  <!-- Footer -->
+  <footer class="page-footer grey darken-4">
+    <div class="container">
+      <div class="row">
+        <div class="col s12 m7 l6 center-align">
+          <h5 class="teal-text text-lighten-5" tabindex="0"><b>Colaboradores</b></h5>
+          <ul>
+            <li><a class="grey-text text-lighten-5" href="" target="_blank" tabindex="0">Joseph Gabino Rodríguez</a>
+            </li>
+            <li><a class="grey-text text-lighten-5" href="" target="_blank" tabindex="0">Vlatko Jesús Marchán
+                Sekulic</a></li>
+            <li><a class="grey-text text-lighten-5" href="" target="_blank" tabindex="0">Tanausú Falcón Casanova</a>
+            </li>
+            <li><a class="grey-text text-lighten-5" href="" target="_blank" tabindex="0">Ian Vera Labrin</a></li>
+          </ul>
+        </div>
+        <div class="col s12 m5 l4 center-align">
+          <h5 class="teal-text text-lighten-5" tabindex="0"><b>Redes sociales</b></h5>
+          <div class="social-container center">
+            <a href="https://www.facebook.com/universidaddelalaguna" target="_blank" tabindex="0"
+              aria-label="Link para compartir en Facebook"><i class="fab fa-facebook-square"></i></a>
+            <a href="https://twitter.com/ULL" tabindex="0" target="_blank"
+              aria-label="Link para compartir en Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com/ULL" tabindex="0" target="_blank"
+              aria-label="Link para compartir en Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/school/universidad-de-la-laguna" tabindex="0" target="_blank"
+              aria-label="Link para compartir en youtube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright teal-text text-lighten-4 grey darken-3">
+      <div class="container">
+        <div class="row">
+          <div class="col s12 m5 l5 center-align" tabindex="0">
+            © 2022 Copyright
+          </div>
+          <div class="col s12 m7 l7">
+            <a class="teal-text text-lighten-5" href="./accessibility.html" target="_self"
+              tabindex="0">Accesibilidad</a>
+            <a class="right teal-text text-lighten-5" href="./web_map.html" target="_self" tabindex="0">Mapa web</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--Script menu movil + slider + carrousel-->
+  <script>
+
+    document.addEventListener('DOMContentLoaded', function () {
+      var elems = document.querySelectorAll('.sidenav');
+      var instances = M.Sidenav.init(elems);
+    });
+    document.addEventListener('DOMContentLoaded', function () {
+      var elems = document.querySelectorAll('.parallax');
+      var instances = M.Parallax.init(elems);
+    });
+
+
+
+    document.addEventListener('DOMContentLoaded', function () {
+      var elems = document.querySelectorAll('.fixed-action-btn');
+      var instances = M.FloatingActionButton.init(elems);
+    });
+  </script>
+  <!--Kit para las fuentes-->
+  <script src="https://kit.fontawesome.com/35db202371.js" crossorigin="anonymous"></script>
+  <!--JavaScript at end of body for optimized loading-->
+  <script src="./js/index.js"></script>
+
+
+</body>
+
+</html>

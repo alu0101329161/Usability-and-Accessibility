@@ -1,0 +1,245 @@
+/* Anchura fija definida 770px */
+body
+{
+    width: 770px;
+    margin: 0 auto;
+}
+
+#navigation 
+{
+    margin: auto;    
+}
+
+.nav
+{
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  overflow: hidden;
+  height: 100px;
+
+  background-image: url(./img/diamante.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 800px 500px;
+}
+
+.nav input[type=text] {
+  float: right;
+  padding: 5px;
+  border: none;
+  margin-top: 15px;
+  margin-right: 16px;
+  font-size: 15px;
+}
+
+.nav ul
+{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    overflow: hidden;
+    background-color: lightgray;
+    margin: 0;
+    padding: 0;
+}
+
+/* Arial, color negro y tamaño 1.5em */
+.nav li a
+{
+    font-family: arial;
+    font-size: 1.5em;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.nav li a:hover
+{
+    background-color: white;
+}
+
+#pie-pagina
+{
+    border: 2px solid black;
+    margin-top: 25px;
+}
+
+#pie-pagina p
+{
+    font-size: 0.8em;
+    text-align: center;
+    font-family: Arial;
+}
+/* Todos los div dentro de container se ponen en columnas */
+#container
+{
+    display: flex;
+}
+
+#left-side
+{
+    width: 360px;
+    margin-top: 0.5em;
+    background-color: rgb(163, 253, 234);
+}
+
+#center-side
+{
+    width: 260px;
+    
+    align-items: center;
+    font-size: 1.5em;
+    background-image: url();
+    margin-top: 0.5em;
+    background-color: bisque;
+}
+
+/* anchura columna de la derecha */
+
+#right-side
+{
+    width: 130px;
+    margin-top: 0.5em;
+    background-color: rgb(255, 255, 255);
+}
+
+#center-side a
+{
+    color: green;
+    text-decoration: none;
+
+}
+
+#center-side a:hover
+{
+    color: blue;
+}
+
+
+
+/* Aplico a las 3 columnas */
+#left-side, #center-side, #right-side
+{
+    border: 2px solid black;
+    height: 680px;
+    margin: auto;
+    /*margin-top: 25px;*/
+    text-align: center;
+}
+
+/* fotmateo texto */
+#left-side ul
+{
+    font-family: Arial;
+    font-size: 1.0em;
+    color: black;
+    
+}
+/* relleno = padding margen inferior = botton */
+#left-side li
+{
+    text-align: left;
+    list-style-type: none;
+    margin-bottom: 0.7em;
+    padding: 0.3em;
+}
+
+/* Estado normal */
+#left-side a
+{
+    text-decoration: none;
+    color: green;
+}
+/* estado si passo por encima */
+#left-side a:hover
+{
+    color: red;
+}
+/* estado si ha sido visitado */
+#left-side a:visited
+{
+    font-family: Verdana;
+    color: blue;
+}
+/* estado si ha sido visitado y paso por encima */
+#left-side a:visited:hover
+{
+    color: red;
+}
+
+#left-side img
+{
+  width: 100px;
+  height: auto;
+  display: center;
+}
+
+/* formateo de texto */
+#right-side table
+{
+    font-family: Arial;
+    font-size: 1.5em;
+    color: black;
+}
+/* espaciado hacia abajo */
+#right-side tr
+{
+    padding-bottom: 1.5em;
+}
+/* estado normal */
+#right-side a
+{
+    color: green;
+    text-decoration: none;
+}
+/* si paso por encima */
+#right-side a:hover
+{
+    color: blue;
+}
+/* si estan visitadas */
+#right-side a:visited
+{
+    font-family: Verdana;
+    color: green;
+}
+/* si estan visitadas y paso por encima */
+#right-side a:visited:hover
+{
+    color: blue;
+}
+
+/* fotmateo texto */
+#center-side ul
+{
+    display: flex;
+    font-family: Arial;
+    font-size: 0.7em;
+    color: black;
+    
+}
+/* relleno = padding margen inferior = botton */
+#center-side li
+{
+    text-align: left;
+    list-style-type: none;
+    margin-bottom: 0.8em;
+    padding: 0.3em;
+}
+
+#center-side p
+{
+    font-size: 0.8em;
+    text-align: center;
+    font-family: Arial;
+}
+
+#left-side p
+{
+    font-size: 0.9em;
+    text-align: center;
+    font-family: Arial;
+}

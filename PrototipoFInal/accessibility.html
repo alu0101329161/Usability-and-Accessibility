@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <!-- Iconos favicon -->
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <!-- Fuente Google -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="./css/style.css" rel="stylesheet">
+  <link href="./css/accessibility.css" rel="stylesheet">
+  <title>Accesibilidad</title>
+</head>
+
+<body>
+  <!--Barra de navegación-->
+  <header>
+    <div class="navbar-fixed">
+      <nav role>
+        <div class="nav-wrapper grey darken-4">
+          <a tabindex="0" href="./index.html" class="brand-logo">
+            <i class="material-icons" aria-hidden="true">code</i>
+            Ruby's Crypto
+          </a>
+
+          <a href="javascript:;" data-target="mobile-demo" class="sidenav-trigger" target="_self"><i
+              class="material-icons">menu</i></a>
+
+          <!--Barra de navegación PC-->
+          <ul class="right hide-on-med-and-down" role="navigation">
+            <li><a href="./wallet.html">Monedero Electrónico</a></li>
+            <li><a href="./news.html">Noticias</a></li>
+            <li><a href="./market.html">Mercado</a></li>
+            <li><a href="./analytics.html">Analíticas</a></li>
+            <li><a href="./register.html">Registrarse</a></li>
+            <li><a href="./about_us.html" class="btn white black-text waves-effect waves-blue-grey lighten-1"
+                role="button" aria-label="Sobre Nosotros">Sobre nosotros</a></li>
+            <!--Agregamos elemnto a la tabulacion + role + label-->
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div>
+      <!--Barra de navegación Móvil-->
+      <ul id="mobile-demo" class="sidenav" tabindex="-1">
+        <li><a aria-expanded="false" tabindex="-1" target="_self" href="./wallet.html">Monedero Electrónico</a></li>
+        <li><a aria-expanded="false" tabindex="-1" target="_self" href="./news.html">Noticias</a></li>
+        <li><a aria-expanded="false" tabindex="-1" target="_self" href="./market.html">Mercado</a></li>
+        <li><a aria-expanded="false" tabindex="-1" target="_self" href="./analytics.html">Analíticas</a></li>
+        <li><a aria-expanded="false" tabindex="-1" target="_self" href="./register.html">Registrarse</a></li>
+        <li><a aria-expanded="false" tabindex="-1" target="_self" href="./about_us.html"
+            class="btn black white-text waves-effect waves-blue-grey lighten-1" role="button"
+            aria-label="Sobre Nosotros">Sobre nosotros</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <!-- Breadcrumbs -->
+    <div class="container">
+      <div class="row">
+        <nav>
+          <div class="nav-wrapper">
+            <div class="col s12 m12 l12 grey darken-3">
+              <a href="./index.html" target="_self" class="breadcrumb" tabindex="0">Inicio</a>
+              <a href="./accessibility.html" target="_self" class="breadcrumb" tabindex="0">Accesibilidad</a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <!-- Fin Breadcrumbs -->
+
+    <!--Contenido-->
+    <div class="container blue-grey lighten-4">
+      <div class="row">
+        <div class="col s12 m12 l12">
+          <h4 class="purple-text text-darken-3 center" tabindex="0">Declaración de Accesibilidad</h4>
+        </div>
+        <div class="col s12 m12 l12">
+          <p tabindex="0"><b>Venta de criptomonedas</b> se ha comprometido a hacer accesible su sitio web de
+            conformidad con el
+            <a class="external-link" href="https://www.boe.es/diario_boe/txt.php?id=BOE-A-2018-12699" target="_blank" tabindex="0"><u>Real
+                Decreto 1112/2018, de 7 de septiembre</u></a>,
+            sobre accesibilidad de los sitios web y aplicaciones para dispositivos móviles del sector público.
+          </p>
+          <p tabindex="0">La presente declaración de accesibilidad se aplica al sitio web de <b>Ruby`s Crypto</b>.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12 m12 l12">
+          <h5 class="purple-text text-darken-3" tabindex="0">Preparación de la presente declaración de accesibilidad.
+          </h5>
+          <p tabindex="0">La presente declaración de accesibilidad fue preparada el 7 de junio de 2021.</p>
+          <p tabindex="0">Última revisión de la declaración: 13 de junio de 2021.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12 m12 l12">
+          <h5 class="purple-text text-darken-3" tabindex="0">Observaciones y datos de contacto</h5>
+          <p tabindex="0">Puede realizar comunicaciones sobre requisitos de accesibilidad (artículo 10.2.a del RD
+            1112/2018) como por ejemplo:</p>
+          <ul tabindex="0">
+            <li class="bullet">Informar sobre cualquier posible incumplimiento por parte de este sitio web.</li>
+            <li class="bullet">Transmitir otras <b>dificultades de acceso</b> al contenido.</li>
+            <li class="bullet">Formular cualquier otra <b>consulta o sugerencia de mejora</b> relativa a la
+              accesibilidad del sitio web.</li>
+          </ul>
+          <p tabindex="0">A través del correo <b>RubyCoins@gmail.com</b> se tratarán todas las comunicaciones
+            recibidas.</p>
+          <p tabindex="0"><b>Solicitudes de información accesible y quejas:</b> De acuerdo con el artículo 12 del RD
+            1112/2018, serán presentadas y registradas
+            conforme a los requisitos establecidos en la Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo
+            Común de las Administraciones Públicas.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12 m12 l12">
+          <h5 class="purple-text text-darken-3" tabindex="0">Contenido opcional</h5>
+          <p tabindex="0">En este sitio web se han adoptado una serie de medidas cuyo objetivo es mejorar la
+            accesibilidad. Las ventajas que esto conlleva son, entre otras:</p>
+          <ul tabindex="0">
+            <li class="bullet">Facilitar el acceso de las personas independientemente de su condición física o de su
+              entorno.</li>
+            <li class="bullet">Permitir el acceso con diferentes agentes de usuario.</li>
+            <li class="bullet">Incluir contenidos claros y bien estructurados.</li>
+            <li class="bullet">Mejorar la navegación y la experiencia del usuario.</li>
+          </ul>
+          <p tabindex="0">Entre las medidas adoptadas:</p>
+          <ul tabindex="0">
+            <li class="bullet">Orden lógico de presentación de los elementos en pantalla y de los contenidos en el
+              código.</li>
+            <li class="bullet">Uso de los estándares del W3C.</li>
+            <li class="bullet">Pautas de Accesibilidad para el Contenido Web ( WCAG nivel AA).</li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12 m12 l12">
+          <h5 class="purple-text text-darken-3" tabindex="0">Navegación</h5>
+          <p tabindex="0">Este sitio web está diseñado con un formato común para todas las páginas de forma que la
+            familiarización con el contenido de la mismas sea sencilla para
+            conseguir una mejor navegación.</p>
+          <p tabindex="0">Las páginas se componen, a grandes rasgos, de las siguientes zonas:</p>
+          <ul tabindex="0">
+            <li class="bullet"><b>Cabecera</b>, con acceso al buscador, inicio de sesión, menú de usuario e información
+              sobre el sitio web y sus autores.</li>
+            <li class="bullet"><b>Zona central de contenidos</b> que variará en función del tipo de página donde se
+              encuentre el usuario.</li>
+            <li class="bullet"><b>Pie</b>, en el que se incluye información sobre los autores del sitio web, las redes
+              sociales, la página de accesibilidad y el mapa web.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12 m12 l12">
+          <h5 class="purple-text text-darken-3" tabindex="0">Diseño y maquetación</h5>
+          <p tabindex="0">El diseño y maquetación del sitio web se ha desarrollado teniendo presentes las Pautas de
+            Accesibilidad para el Contenido Web que afectan directamente a esta
+            parte del desarrollo:</p>
+          <ul tabindex="0">
+            <li class="bullet">Separación de contenido y presentación mediante hojas de estilo.</li>
+            <li class="bullet">Uso de unidades relativas (permiten redimensión de texto y diseños fluidos).</li>
+            <li class="bullet">Control de contraste de colores.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12 m12 l12">
+          <h5 class="purple-text text-darken-3" tabindex="0">Migas de pan</h5>
+          <p tabindex="0">En todos los documentos del sitio se encuentra presente el mecanismo conocido como <b>Migas
+              de pan</b>. Su propósito es situar al usuario en el contexto del sitio, indicando una posible ruta desde
+            la página principal al documento actual.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12 m12 l12">
+          <h5 class="purple-text text-darken-3" tabindex="0">Información del documento</h5>
+          <p tabindex="0">Asimismo, en la parte final de todos las páginas se incluye información sobre los autores del
+            sitio web, las redes sociales, la página de accesibilidad y el mapa web.</p>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!--Fin Contenido-->
+
+  <!--Botón de accesibilidad-->
+  <div class="fixed-action-btn">
+    <a href="#" class="btn-floating btn-large blue-grey darken-1 pulse" role="button" aria-label="Subir arriba">
+        <i tabindex="0" role="button" class="large material-icons" aria-hidden="true">arrow_upward</i>
+    </a>
+</div>
+
+
+  <!-- Footer -->
+  <footer class="page-footer grey darken-4">
+    <div class="container">
+      <div class="row">
+        <div class="col s12 m7 l6 center-align">
+          <h5 class="teal-text text-lighten-5" tabindex="0"><b>Colaboradores</b></h5>
+          <ul>
+            <li><a class="grey-text text-lighten-5" href="" target="_blank" tabindex="0">Joseph Gabino Rodríguez</a>
+            </li>
+            <li><a class="grey-text text-lighten-5" href="" target="_blank" tabindex="0">Vlatko Jesús Marchán
+                Sekulic</a></li>
+            <li><a class="grey-text text-lighten-5" href="" target="_blank" tabindex="0">Tanausú Falcón Casanova</a>
+            </li>
+            <li><a class="grey-text text-lighten-5" href="" target="_blank" tabindex="0">Ian Vera Labrin</a></li>
+          </ul>
+        </div>
+        <div class="col s12 m5 l4 center-align">
+          <h5 class="teal-text text-lighten-5" tabindex="0"><b>Redes sociales</b></h5>
+          <div class="social-container center">
+            <a href="https://www.facebook.com/universidaddelalaguna" target="_blank" tabindex="0"
+              aria-label="Link para compartir en Facebook"><i class="fab fa-facebook-square"></i></a>
+            <a href="https://twitter.com/ULL" tabindex="0" target="_blank"
+              aria-label="Link para compartir en Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com/ULL" tabindex="0" target="_blank"
+              aria-label="Link para compartir en Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/school/universidad-de-la-laguna" tabindex="0" target="_blank"
+              aria-label="Link para compartir en youtube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright teal-text text-lighten-4 grey darken-3">
+      <div class="container">
+        <div class="row">
+          <div class="col s12 m5 l5 center-align" tabindex="0">
+            © 2022 Copyright
+          </div>
+          <div class="col s12 m7 l7">
+            <a class="teal-text text-lighten-5" href="./accessibility.html" target="_self"
+              tabindex="0">Accesibilidad</a>
+            <a class="right teal-text text-lighten-5" href="./web_map.html" target="_self" tabindex="0">Mapa web</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!--  Menu Movil dinamico-->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var elems = document.querySelectorAll('.sidenav');
+      var instances = M.Sidenav.init(elems);
+    });
+  </script>
+
+  <!--  Scripts FAVICON-->
+  <script src="https://kit.fontawesome.com/35db202371.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Iconos favicon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- Fuente Google -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
+    <!--AJAX-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <link href="style.css" rel="stylesheet">
+    <title>Register</title>
+</head>
+<body>
+
+        <!--Barra de navegación-->
+        <div class="navbar-fixed">
+          <nav>
+            <div class="nav-wrapper red lighten-1">
+              <a href="./index.html" class="brand-logo">
+                <i class="material-icons">code</i>
+                Ruby's Crypto
+              </a>
+  
+              <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+  
+              <!--Barra de navegación PC-->
+              <ul class="right hide-on-med-and-down">
+                <li><a href="#">Monedero Electrónico</a></li>
+                <li><a href="#">Tokens</a></li>
+                <li><a href="#">Leverage Bancario</a></li>
+                <li><a href="./register.html">Registrarse</a></li>
+                <li><a href="#" class="btn white black-text waves-effect waves-blue-grey lighten-1">Sobre nosotros</a></li>  
+              </ul>
+  
+              <!--Barra de navegación Móvil-->
+              <ul id="nav-mobile" class="sidenav">
+                <li><a href="#">Monedero Electrónico</a></li>
+                <li><a href="#">Tokens</a></li>
+                <li><a href="#">Leverage Bancario</a></li>
+                <li><a href="#" class="btn black white-text waves-effect waves-blue-grey lighten-1">Sobre nosotros</a></li>
+              </ul>
+            </div>
+        </nav>
+      </div>
+
+      <div class="container white"> <!-- CONTAINER -->
+        <div class="row"> <!-- ROW -->				
+          <form method="post" id="registro">
+            <div class="input-field col l6 col-m6">
+              <i class="material-icons prefix">account_circle</i>
+              <input type="text" name="nombres" id="nombres" required>
+              <label for="nombres">Nombre</label>
+            </div>
+            <div class="input-field col l6 col-m6">
+              <i class="material-icons prefix">account_circle</i>
+              <input type="text" name="apellidos" id="apellidos" required>
+              <label for="apellidos">Apellidos</label>
+            </div>
+            <div class="clearfix"></div>
+            <div class="input-field col l4 col-m4">
+              <i class="material-icons prefix">date_range</i>
+              <input class="datepicker" type="text" name="fecha_nacimiento" id="fecha_nacimiento" required>
+              <label for="fecha_nacimiento">Fecha de nacimiento</label>
+            </div>
+            <div class="input-field col l5 m5">
+              <i class="material-icons prefix">directions</i>
+              <input type="text" name="lugar_nacimiento" id="lugar_nacimiento" required>
+              <label for="lugar_nacimiento">Lugar de nacimiento</label>
+            </div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="input-field col l6 m6">
+              <i class="material-icons prefix">email</i>
+              <input type="email" name="correo" id="correo" class="validate">
+              <label for="correo">Correo</label>
+              <span class="helper-text" data-error="Escriba un correo válido." data-success="Correo válido">Su correo es muy importante para contactarnos</span>
+            </div>
+            <div class="clearfix"></div>
+            <br>
+            <div class="clearfix"></div>
+            <button type="submit" class="btn waves-effect">
+              <i class="material-icons right">check</i>
+              Registrarse
+            </button>
+            </form>
+        </div> <!-- ROW -->
+      </div> <!-- CONTAINER -->
+
+      <!--Mostrar usuarios-->
+    <div class="container" id="User-Container">
+      <blockquote>
+        <h5>Usuarios Registrados:</h5>
+      </blockquote>
+      <div class="row">
+        <div class="col s6 m6 l6">
+          <table class="striped" id="User-table">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Email</th>
+              </tr>
+            </thead>
+          </table>
+        </div>
+      </div>
+    </div>
+
+
+    <!--Pie de pagina-->
+    <footer class="page-footer red lighten-1">
+      <div class="social-container center">
+        <a href="#"><i class="fab fa-facebook-square"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+        <div class="footer-copyright">
+            <div class="container center footer-text">
+            © 2022 Copyright <br>
+            Una colaboración de Joseph Gabino, Ian Vera, Tanausú Falcón y Vlatko Marchán  
+            <a class="grey-text text-lighten-4 right" href="#!">About us</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./ajax.js"></script>
+    <script type="module" src="./register.js"></script>
+
+</body>
+</html>

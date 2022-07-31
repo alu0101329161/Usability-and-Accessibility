@@ -1,0 +1,57 @@
+.filter {
+  color: black;
+}
+
+.filter-title {
+  font-size: 25px;
+  color: black;
+}
+
+.read-more {
+  font-size: 20px;
+  color: orange;
+}
+
+.news-banner {
+  font-size: 40px;
+}
+
+.news-title {
+  font-size: 30px;
+}
+
+.news-text {
+  font-size: 18px !important;
+}
+
+.card-image {
+  height: 400px;
+  width: auto;
+  overflow: hidden;
+}
+
+#formato-fecha {
+  font-size: 15px;
+  color: black;
+}
+
+#form-label {
+  color: black;
+}
+
+.pag-link {
+  color: black !important;
+}
+
+/* icon prefix focus color */
+.input-field .prefix.active {
+  color: orange;
+}
+
+th {
+  color: black;
+}
+
+td {
+  color: black;
+}

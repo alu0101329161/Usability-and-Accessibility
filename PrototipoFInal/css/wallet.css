@@ -1,0 +1,144 @@
+
+
+body {
+    background: #d4d4d4;
+}
+
+p {
+    color: black;
+    font-size: 1.6em;
+}
+
+.wrap {
+    width: 80%;
+    max-width: 90%;
+    margin: 30px auto;
+}
+
+ul.ventanas {
+    width: 100%;
+    background: #363636;
+    list-style: none;
+    display: flex;
+}
+
+ul.ventanas li {
+    width: 50%;
+}
+
+ul.ventanas li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 10px;
+    text-align: center;
+
+    display: block;
+    padding: 30px 0px;
+}
+
+.activar {
+    background: #546e7a;
+}
+
+ul.ventanas li a .tab-text {
+    margin-left: 8px;
+    font-size: large;
+}
+
+.secciones {
+    width: 100%;
+    background: #fff;
+}
+
+.secciones article {
+    padding: 30px;
+}
+
+.secciones article p {
+    text-align: justify;
+}
+
+@media only screen and (max-width: 700px) {
+    ul.ventanas li {
+        width: none;
+        flex-basis: 0;
+        flex-grow: 1;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+
+    ul.ventanas li a .tab-text {
+        display: none !important;
+        visibility: hidden !important;
+    }
+
+    .secciones article {
+        padding: 20px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .secciones article {
+        padding: 10px;
+    }
+    h1, h2, h3, h4, h5, h6 {
+        font-size: 1em !important;
+    }
+    blockquote h4 {
+        color: black;
+        font-size: 1em !important;
+    }
+}
+@media only screen and (max-width: 256px) {
+    .secciones article {
+        padding: 10px;
+    }
+    h1, h2, h3, h4, h5, h6 {
+        font-size: 0.8em !important;
+    }
+    blockquote h2 {
+        color: black;
+        font-size: 0.8em !important;
+    }
+}
+.divisas {
+    width: 90%;
+    max-width: 95%;
+    margin: 30px auto;
+}
+
+blockquote h4 {
+    color: black;
+    font-size: 2em;
+}
+
+h1 {
+    color: white;
+    font-size: 1.6em;
+}
+
+h2{
+    color: black;
+    font-size: 1.6em;
+}
+
+h3 {
+    color: black;
+    font-size: 1.6em;
+}
+
+h4 {
+    font-size: 1.6em;
+}
+
+p{
+    color: black;
+}
+
+th {
+    color: black;
+}
+td {
+    color: black;
+}

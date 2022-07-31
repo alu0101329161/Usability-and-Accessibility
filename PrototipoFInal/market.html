@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <!-- Iconos favicon -->
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <!-- Fuente Google -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="./css/style.css" rel="stylesheet">
+  <link href="./css/market.css" rel="stylesheet">
+  <title>Mercado</title>
+</head>
+
+<body>
+  <!--Barra de navegación-->
+  <header>
+    <div class="navbar-fixed">
+      <nav role>
+        <div class="nav-wrapper grey darken-4">
+          <a href="./index.html" class="brand-logo">
+            <i class="material-icons" aria-hidden="true">code</i>
+            Ruby's Crypto
+          </a>
+
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger" target="_self"><i
+              class="material-icons">menu</i></a>
+
+          <!--Barra de navegación PC-->
+          <ul class="right hide-on-med-and-down" role="navigation">
+            <li><a href="./wallet.html">Monedero Electrónico</a></li>
+            <li><a href="./news.html">Noticias</a></li>
+            <li><a href="./market.html">Mercado</a></li>
+            <li><a href="./analytics.html">Analíticas</a></li>
+            <li><a href="./register.html">Registrarse</a></li>
+            <li><a href="./about_us.html" class="btn white black-text waves-effect waves-blue-grey lighten-1"
+                role="button" aria-label="Sobre Nosotros">Sobre nosotros</a></li>
+            <!--Agregamos elemnto a la tabulacion + role + label-->
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div>
+      <!--Barra de navegación Móvil-->
+      <ul id="mobile-demo" class="sidenav" tabindex="-1">
+        <li><a aria-expanded="false" tabindex="-1" target="_self" href="./wallet.html">Monedero Electrónico</a></li>
+        <li><a aria-expanded="false" tabindex="-1" target="_self" href="./news.html">Noticias</a></li>
+        <li><a aria-expanded="false" tabindex="-1" target="_self" href="./market.html">Mercado</a></li>
+        <li><a aria-expanded="false" tabindex="-1" target="_self" href="./analytics.html">Analíticas</a></li>
+        <li><a aria-expanded="false" tabindex="-1" target="_self" href="./register.html">Registrarse</a></li>
+        <li><a aria-expanded="false" tabindex="-1" target="_self" href="./about_us.html"
+            class="btn black white-text waves-effect waves-blue-grey lighten-1" role="button"
+            aria-label="Sobre Nosotros">Sobre nosotros</a></li>
+      </ul>
+    </div>
+  </header>
+
+
+  <!-- Breadcrumbs -->
+  <div class="container">
+    <div class="row">
+      <nav>
+        <div class="nav-wrapper">
+          <div class="col s12 m12 l12 grey darken-3">
+            <a href="index.html" target="_self" class="breadcrumb" tabindex="0">Inicio</a>
+            <a href="market.html" target="_self" class="breadcrumb" tabindex="0">Mercado</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div class="col s12 m12 l12" class>
+      <h1 tabindex="0">Mercado</h1>
+      <p tabindex="0" class="flow-text">¡Las últimas colecciones de NFTs a la venta ya disponibles!</p>
+    </div>
+    <div class="row">
+      <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Pp9n19TmxsE"
+          title="Anuncio Colección Rude Golems" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+
+  
+
+  <!--Sección de mercado de Bored Ape-->
+  <div>
+    <div class="row grey darken-4">
+      <div class="col s12 m12 l12">
+        <div class="center-align grey darken-4 text-lighten-4">
+          <h2 tabindex="0" class="news-banner">Colección Bored Ape</h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s6 m3 l3">
+        <div class="card blue-grey darken-1">
+          <div class="card-image">
+            <img src="images/market/bored1.JPG" alt="Bored Ape" aria-labelledby="ape1">
+          </div>
+          <div class="card-content white-text">
+            <a href="javascript:;">
+              <span id="ape1" class="card-title">Bored Ape Rosa</span>
+            </a>
+            <div class="chip">Bored</div>
+            <div tabindex="0">
+              <span>Top Bid:</span>
+              <p class="prize">60 Eth</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col s6 m3 l3">
+        <div class="card blue-grey darken-1">
+          <div class="card-image">
+            <img src="images/market/bored2.JPG" alt="Bored Ape" aria-labelledby="ape2">
+          </div>
+          <div class="card-content white-text">
+            <a href="javascript:;">
+              <span id="ape2" class="card-title">Bored Ape Marinero</span>
+            </a>
+            <div class="chip">Bored</div>
+            <div tabindex="0">
+              <span>Top Bid:</span>
+              <p class="prize">70 Eth</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col s6 m3 l3">
+        <div class="card blue-grey darken-1">
+          <div class="card-image">
+            <img src="images/market/bored3.JPG" alt="Bored Ape" aria-labelledby="ape3">
+          </div>
+          <div class="card-content white-text">
+            <a href="javascript:;">
+              <span id="ape3" class="card-title">Bored Ape Rojo</span>
+            </a>
+            <div class="chip">Bored</div>
+            <div tabindex="0">
+              <span>Top Bid:</span>
+              <p class="prize">50 Eth</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col s6 m3 l3">
+        <div class="card blue-grey darken-1">
+          <div class="card-image">
+            <img src="images/market/bored4.JPG" alt="Bored Ape" aria-labelledby="ape4">
+          </div>
+          <div class="card-content white-text">
+            <a href="javascript:;">
+              <span id="ape4" class="card-title">Bored Ape Ruso</span>
+            </a>
+            <div class="chip">Bored</div>
+            <div tabindex="0">
+              <span>Top Bid:</span>
+              <p class="prize">80 Eth</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s6 m3 l3">
+        <div class="card blue-grey darken-1">
+          <div class="card-image">
+            <img src="images/market/bored5.JPG" alt="Bored Ape" aria-labelledby="ape5">
+          </div>
+          <div class="card-content white-text">
+            <a href="javascript:;">
+              <span id="ape5" class="card-title">Bored Ape Cowboy</span>
+            </a>
+            <div class="chip">Bored</div>
+            <div tabindex="0">
+              <span>Top Bid:</span>
+              <p class="prize">65 Eth</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col s6 m3 l3">
+        <div class="card blue-grey darken-1">
+          <div class="card-image">
+            <img src="images/market/bored6.JPG" alt="Bored Ape" aria-labelledby="ape6">
+          </div>
+          <div class="card-content white-text">
+            <a href="javascript:;">
+              <span id="ape6" class="card-title">Bored Ape Marrón</span>
+            </a>
+            <div class="chip">Bored</div>
+            <div tabindex="0">
+              <span>Top Bid:</span>
+              <p class="prize">50 Eth</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col s6 m3 l3">
+        <div class="card blue-grey darken-1">
+          <div class="card-image">
+            <img src="images/market/bored7.JPG" alt="Bored Ape" aria-labelledby="ape7">
+          </div>
+          <div class="card-content white-text">
+            <a href="javascript:;">
+              <span id="ape7" class="card-title">Bored Ape Rosa</span>
+            </a>
+            <div class="chip">Bored</div>
+            <div tabindex="0">
+              <span>Top Bid:</span>
+              <p class="prize">45 Eth</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col s6 m3 l3">
+        <div class="card blue-grey darken-1">
+          <div class="card-image">
+            <img src="images/market/bored8.JPG" alt="Bored Ape" aria-labelledby="ape8">
+          </div>
+          <div class="card-content white-text">
+            <a href="javascript:;">
+              <span id="ape8" class="card-title">Bored Ape Zombie</span>
+            </a>
+            <div class="chip">Bored</div>
+            <div tabindex="0">
+              <span>Top Bid:</span>
+              <p class="prize">80 Eth</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row center-align">
+      <a class="waves-effect blue-grey darken-4 btn" role="button" href="javascript:;"><i aria-hidden="true"
+          class="material-icons left">code</i>Ver colección</a>
+    </div>
+  </div>
+
+  <!--Sección de mercado de Rude Golems-->
+  <div>
+    <div class="row grey darken-4">
+      <div class="col s12 m12 l12">
+        <div class="center-align grey darken-4 text-lighten-4">
+          <h2 tabindex="0" class="news-banner">Colección Rude Golems</h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s6 m3 l3">
+        <div class="card blue-grey darken-1">
+          <div class="card-image">
+            <img src="images/market/rude1.JPG" alt="Rude Golem" aria-labelledby="golem1">
+          </div>
+          <div class="card-content white-text">
+            <a href="javascript:;">
+              <span id="golem1" class="card-title">Rude Golem Cinta</span>
+            </a>
+            <div class="chip">Rude</div>
+            <div tabindex="0">
+              <span>Top Bid:</span>
+              <p class="prize">30 Eth</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col s6 m3 l3">
+        <div class="card blue-grey darken-1">
+          <div class="card-image">
+            <img src="images/market/rude2.JPG" alt="Rude Golem" aria-labelledby="golem2">
+          </div>
+          <div class="card-content white-text">
+            <a href="javascript:;">
+              <span id="golem2" class="card-title">Rude Golem Camisa</span>
+            </a>
+            <div class="chip">Rude</div>
+            <div tabindex="0">
+              <span>Top Bid:</span>
+              <p class="prize">35 Eth</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col s6 m3 l3">
+        <div class="card blue-grey darken-1">
+          <div class="card-image">
+            <img src="images/market/rude3.JPG" alt="Rude Golem" aria-labelledby="golem3">
+          </div>
+          <div class="card-content white-text">
+            <a href="javascript:;">
+              <span id="golem3" class="card-title">Rude Golem Rojo</span>
+            </a>
+            <div class="chip">Rude</div>
+            <div tabindex="0">
+              <span>Top Bid:</span>
+              <p class="prize">40 Eth</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col s6 m3 l3">
+        <div class="card blue-grey darken-1">
+          <div class="card-image">
+            <img src="images/market/rude4.JPG" alt="Rude Golem" aria-labelledby="golem4">
+          </div>
+          <div class="card-content white-text">
+            <a href="javascript:;">
+              <span id="golem4" class="card-title">Rude Golem Cristal</span>
+            </a>
+            <div class="chip">Rude</div>
+            <div tabindex="0">
+              <span>Top Bid:</span>
+              <p class="prize">45 Eth</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s6 m3 l3">
+        <div class="card blue-grey darken-1">
+          <div class="card-image">
+            <img src="images/market/rude5.JPG" alt="Rude Golem" aria-labelledby="golem5">
+          </div>
+          <div class="card-content white-text">
+            <a href="javascript:;">
+              <span id="golem5" class="card-title">Rude Golem Gafas</span>
+            </a>
+            <div class="chip">Rude</div>
+            <div tabindex="0">
+              <span>Top Bid:</span>
+              <p class="prize">60 Eth</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col s6 m3 l3">
+        <div class="card blue-grey darken-1">
+          <div class="card-image">
+            <img src="images/market/rude6.JPG" alt="Rude Golem" aria-labelledby="golem6">
+          </div>
+          <div class="card-content white-text">
+            <a href="javascript:;">
+              <span id="golem6" class="card-title">Rude Golem Sombrilla</span>
+            </a>
+            <div class="chip">Rude</div>
+            <div tabindex="0">
+              <span>Top Bid:</span>
+              <p class="prize">35 Eth</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col s6 m3 l3">
+        <div class="card blue-grey darken-1">
+          <div class="card-image">
+            <img src="images/market/rude7.JPG" alt="Rude Golem" aria-labelledby="golem7">
+          </div>
+          <div class="card-content white-text">
+            <a href="javascript:;">
+              <span id="golem7" class="card-title">Rude Golem Cigarro</span>
+            </a>
+            <div class="chip">Rude</div>
+            <div tabindex="0">
+              <span>Top Bid:</span>
+              <p class="prize">60 Eth</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col s6 m3 l3">
+        <div class="card blue-grey darken-1">
+          <div class="card-image">
+            <img src="images/market/rude8.JPG" alt="Rude Golem" aria-labelledby="golem8">
+          </div>
+          <div class="card-content white-text">
+            <a href="javascript:;">
+              <span id="golem8" class="card-title">Rude Golem 3D</span>
+            </a>
+            <div class="chip">Rude</div>
+            <div tabindex="0">
+              <span>Top Bid:</span>
+              <p class="prize">35 Eth</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row center-align">
+      <a class="waves-effect blue-grey darken-4 btn" role="button" href="javascript:;"><i aria-hidden="true"
+          class="material-icons left">code</i>Ver colección</a>
+    </div>
+  </div>
+
+  <div class="row center-align">
+    <a class="btn waves-effect orange black-text" role="button" href="javascript:;">Ver más colecciones</a>
+  </div>
+
+  <!--Tabla con las últimas ventas-->
+  <div class="row grey darken-4">
+    <div class="col s12 m12 l12">
+      <div class="center-align grey darken-4 text-lighten-4">
+        <h2 tabindex="0">Últimas ventas:</h2>
+      </div>
+    </div>
+  </div>
+
+  <div class="container center-align" aria-label="Últimos items vendidos">
+    <div class="row">
+      <div class="col s12 m12 l12">
+        <table role="table" class="responsive-table striped">
+          <!--role-->
+          <caption tabindex="0" class="tab-caption">Últimos items vendidos</caption>
+          <thead tabindex="0">
+            <tr  class="grey darken-4">
+              <th scope="col">Usuario</th>
+              <th scope="col">Item</th>
+              <th scope="col">Precio</th>
+            </tr>
+          </thead>
+          <tbody >
+            <tr tabindex="0" role="row" class="grey darken-3">
+              <td role="cell">RamonGamer</td>
+              <td role="cell">Karambit</td>
+              <td role="cell">250.50 Eth</td>
+            </tr>
+            <tr tabindex="0" role="row" class="grey darken-3">
+              <td role="cell">Alan23</td>
+              <td role="cell">Five-SeveN Orange Peel</td>
+              <td role="cell">10.00 Eth</td>
+            </tr>
+            <tr tabindex="0" role="row" class="grey darken-3">
+              <td role="cell">Ezel</td>
+              <td role="cell">VariCamo Industrial Grade</td>
+              <td role="cell">180.00 Eth</td>
+            </tr>
+            <tr tabindex="0" role="row" class="grey darken-3">
+              <td role="cell">Jonath</td>
+              <td role="cell">Neon Revolution</td>
+              <td role="cell">12.00 Eth</td>
+            </tr>
+            <tr tabindex="0" role="row" class="grey darken-3">
+              <td role="cell">Miguel</td>
+              <td role="cell">Elite Build</td>
+              <td role="cell">27.62 Eth</td>
+            </tr>
+            <tr tabindex="0" role="row" class="grey darken-3">
+              <td role="cell">Vrocoli</td>
+              <td role="cell">Lux Elementalista</td>
+              <td role="cell">20.00 Eth</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="row center-align">
+      <a class="btn waves-effect waves-light grey darken-4" role="button" href="javascript:;">Ver más ventas</a>
+    </div>
+  </div>
+
+
+  <!--Botón de accesibilidad-->
+  <div class="fixed-action-btn">
+    <a href="#" class="btn-floating btn-large blue-grey darken-1 pulse" role="button" aria-label="Subir arriba">
+        <i tabindex="0" role="button" class="large material-icons" aria-hidden="true">arrow_upward</i>
+    </a>
+  </div>
+
+  <!-- Footer -->
+  <footer class="page-footer grey darken-4">
+    <div class="container">
+      <div class="row">
+        <div class="col s12 m7 l6 center-align">
+          <h5 class="teal-text text-lighten-5" tabindex="0"><b>Colaboradores</b></h5>
+          <ul>
+            <li><a class="grey-text text-lighten-5" href="" target="_blank" tabindex="0">Joseph Gabino Rodríguez</a>
+            </li>
+            <li><a class="grey-text text-lighten-5" href="" target="_blank" tabindex="0">Vlatko Jesús Marchán
+                Sekulic</a></li>
+            <li><a class="grey-text text-lighten-5" href="" target="_blank" tabindex="0">Tanausú Falcón Casanova</a>
+            </li>
+            <li><a class="grey-text text-lighten-5" href="" target="_blank" tabindex="0">Ian Vera Labrin</a></li>
+          </ul>
+        </div>
+        <div class="col s12 m5 l4 center-align">
+          <h5 class="teal-text text-lighten-5" tabindex="0"><b>Redes sociales</b></h5>
+          <div class="social-container center">
+            <a href="https://www.facebook.com/universidaddelalaguna" target="_blank" tabindex="0"
+              aria-label="Link para compartir en Facebook"><i class="fab fa-facebook-square"></i></a>
+            <a href="https://twitter.com/ULL" tabindex="0" target="_blank"
+              aria-label="Link para compartir en Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com/ULL" tabindex="0" target="_blank"
+              aria-label="Link para compartir en Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/school/universidad-de-la-laguna" tabindex="0" target="_blank"
+              aria-label="Link para compartir en youtube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright teal-text text-lighten-4 grey darken-3">
+      <div class="container">
+        <div class="row">
+          <div class="col s12 m5 l5 center-align" tabindex="0">
+            © 2022 Copyright
+          </div>
+          <div class="col s12 m7 l7">
+            <a class="teal-text text-lighten-5" href="./accessibility.html" target="_self"
+              tabindex="0">Accesibilidad</a>
+            <a class="right teal-text text-lighten-5" href="./web_map.html" target="_self" tabindex="0">Mapa web</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!--Script menú movil-->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var elems = document.querySelectorAll('.sidenav');
+      var instances = M.Sidenav.init(elems);
+    });
+    document.addEventListener('DOMContentLoaded', function () {
+      var elems = document.querySelectorAll('.fixed-action-btn');
+      var instances = M.FloatingActionButton.init(elems);
+    });
+  </script>
+  <!--Kit para las fuentes-->
+  <script src="https://kit.fontawesome.com/35db202371.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

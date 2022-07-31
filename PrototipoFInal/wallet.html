@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Iconos favicon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- Fuente Google -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./css/style.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href="./css/style.css" rel="stylesheet">
+    <link href="./css/wallet.css" rel="stylesheet">
+    <title>Monedero</title>
+</head>
+
+<body>
+
+    <!--Barra de navegación-->
+    <header>
+        <div class="navbar-fixed">
+            <nav role>
+                <div class="nav-wrapper grey darken-4">
+                    <a tabindex="0" href="./index.html" class="brand-logo">
+                        <i class="material-icons" aria-hidden="true">code</i>
+                        Ruby's Crypto
+                    </a>
+
+                    <a href="javascript:;" data-target="mobile-demo" class="sidenav-trigger" target="_self"><i
+                            class="material-icons">menu</i></a>
+
+                    <!--Barra de navegación PC-->
+                    <ul class="right hide-on-med-and-down" role="navigation">
+                        <li><a href="./wallet.html">Monedero Electrónico</a></li>
+                        <li><a href="./news.html">Noticias</a></li>
+                        <li><a href="./market.html">Mercado</a></li>
+                        <li><a href="./analytics.html">Analíticas</a></li>
+                        <li><a href="./register.html">Registrarse</a></li>
+                        <li><a href="./about_us.html"
+                                class="btn white black-text waves-effect waves-blue-grey lighten-1" role="button"
+                                aria-label="Sobre Nosotros">Sobre nosotros</a></li>
+                        <!--Agregamos elemnto a la tabulacion + role + label-->
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div>
+            <!--Barra de navegación Móvil-->
+            <ul id="mobile-demo" class="sidenav" tabindex="-1">
+                <li><a aria-expanded="false" tabindex="-1" target="_self" href="./wallet.html">Monedero Electrónico</a>
+                </li>
+                <li><a aria-expanded="false" tabindex="-1" target="_self" href="./news.html">Noticias</a></li>
+                <li><a aria-expanded="false" tabindex="-1" target="_self" href="./market.html">Mercado</a></li>
+                <li><a aria-expanded="false" tabindex="-1" target="_self" href="./analytics.html">Analíticas</a></li>
+                <li><a aria-expanded="false" tabindex="-1" target="_self" href="./register.html">Registrarse</a></li>
+                <li><a aria-expanded="false" tabindex="-1" target="_self" href="./about_us.html"
+                        class="btn black white-text waves-effect waves-blue-grey lighten-1" role="button"
+                        aria-label="Sobre Nosotros">Sobre nosotros</a></li>
+            </ul>
+        </div>
+    </header>
+
+
+    <main>
+        <!-- Breadcrumbs -->
+        <div class="container">
+            <div class="row">
+                <nav>
+                    <div class="nav-wrapper">
+                        <div class="col s12 m12 l12 grey darken-3">
+                            <a href="index.html" target="_self" class="breadcrumb" tabindex="0">Inicio</a>
+                            <a href="wallet.html" target="_self" class="breadcrumb" tabindex="0">Monedero
+                                Electrónico</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+
+        <div class="wrap">
+            <ul class="ventanas">
+                <li role="button"><a href="#tab1"><span><i class="material-icons"
+                                aria-hidden="true">account_balance_wallet</i></span>
+                        <span class="tab-text">
+                            <h1>Ver el monedero</h1>
+                        </span>
+                    </a>
+                </li>
+                <li role="button"><a href="#tab2"><span><i class="material-icons"
+                                aria-hidden="true">keyboard_arrow_down</i></span>
+                        <span class="tab-text">
+                            <h1>Añadir al monedero</h1>
+                        </span>
+                    </a>
+                </li>
+            </ul>
+            <div class="secciones">
+                <article id="tab1">
+                    <!--Mostrar divisas-->
+                    <div class="tabladivisas" id="DivisasContainer">
+                        <blockquote tabindex="0" id="ActivosMonederoText">
+                            <h2>Activos en el monedero:</h2>
+                        </blockquote>
+                        <div class="row">
+                            <div class="divisas">
+                                <table class="striped" id="divisas-tabla">
+                                    <thead role="navigation">
+                                        <tr tabindex="0">
+                                            <th>
+                                                <h3>Nombre cripto activo</h3>
+                                            </th>
+                                            <th>
+                                                <h3>Numero monedas guardado</h3>
+                                            </th>
+                                            <th>
+                                                <h3>Precio por unidad de moneda (Euros)</h3>
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="tBody">
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article id="tab2">
+                    <div class="col s6 m6 l6">
+                        <div class="container">
+                            <blockquote tabindex="0">
+                                <h2>Añadir una nueva cripto</h2>
+                            </blockquote>
+                            <p id="confirmed-transaction"></p>
+                            <form id="Añadir-Moneda" onsubmit="return false">
+                                <div class="input-field center-align">
+                                    <i class="material-icons prefix">email</i>
+                                    <input id="correo" name="correo" type="text" aria-label="Ingresar Email">
+                                    <label for="correo">Email</label>
+                                    <p class="red-text text-darken-3" id="errorCorreo"></p>
+                                </div>
+                                <div class="input-field center-align">
+                                    <i class="material-icons prefix">person_outline</i>
+                                    <input id="nombre" type="text" class="validate" aria-required="true"
+                                        aria-label="Ingresar Nombre Completo Usuario">
+                                    <label for="nombre">Ingresar Nombre Completo del Usuario</label>
+                                </div>
+                                <div class="input-field center-align">
+                                    <i class="material-icons prefix">archive</i>
+                                    <input id="antiguo-exchange" type="text" class="validate" aria-required="true"
+                                        aria-label="Dirección antiguo Exchange">
+                                    <label for="antiguo-exchange">Dirección antiguo Exchange</label>
+                                </div>
+                                <div class="input-field center-align">
+                                    <i class="material-icons prefix">account_balance_wallet</i>
+                                    <input id="Nombre-moneda" type="text" class="validate" aria-required="true"
+                                        aria-label="Nombre de la moneda">
+                                    <label for="Nombre-moneda">Nombre de la moneda</label>
+                                </div>
+                                <div class="input-field center-align">
+                                    <i class="material-icons prefix">attach_money</i>
+                                    <input id="Cantidad" name="Cantidad" type="text" aria-label="Cantidad">
+                                    <label for="Cantidad">Cantidad</label>
+                                    <p class="red-text text-darken-3" id="errorCantidad"></p>
+                                </div>
+                                <div class="center-align">
+                                    <button class="btn waves-effect blue-grey darken-1" type="submit"
+                                        onclick="validacionTiposBoton()"> Añadir
+                                        Moneda
+                                        <i class="material-icons right" aria-hidden="true">send</i>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </main>
+
+
+
+    <!--Botón de accesibilidad-->
+    <div class="fixed-action-btn">
+        <a href="#" class="btn-floating btn-large blue-grey darken-1 pulse" role="button" aria-label="Subir arriba">
+            <i tabindex="0" role="button" class="large material-icons" aria-hidden="true">arrow_upward</i>
+        </a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="page-footer grey darken-4">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m7 l6 center-align">
+                    <h3 class="teal-text text-lighten-5" tabindex="0"><b>Colaboradores</b></h3>
+                    <ul>
+                        <li><a class="grey-text text-lighten-5" href="" target="_blank" tabindex="0">Joseph Gabino
+                                Rodríguez</a>
+                        </li>
+                        <li><a class="grey-text text-lighten-5" href="" target="_blank" tabindex="0">Vlatko Jesús
+                                Marchán
+                                Sekulic</a></li>
+                        <li><a class="grey-text text-lighten-5" href="" target="_blank" tabindex="0">Tanausú Falcón
+                                Casanova</a>
+                        </li>
+                        <li><a class="grey-text text-lighten-5" href="" target="_blank" tabindex="0">Ian Vera Labrin</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col s12 m5 l4 center-align">
+                    <h3 class="teal-text text-lighten-5" tabindex="0"><b>Redes sociales</b></h3>
+                    <div class="social-container center">
+                        <a href="https://www.facebook.com/universidaddelalaguna" target="_blank" tabindex="0"
+                            aria-label="Link para compartir en Facebook"><i class="fab fa-facebook-square"></i></a>
+                        <a href="https://twitter.com/ULL" tabindex="0" target="_blank"
+                            aria-label="Link para compartir en Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://twitter.com/ULL" tabindex="0" target="_blank"
+                            aria-label="Link para compartir en Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/school/universidad-de-la-laguna" tabindex="0" target="_blank"
+                            aria-label="Link para compartir en youtube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright teal-text text-lighten-4 grey darken-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col s12 m5 l5 center-align" tabindex="0">
+                        © 2022 Copyright
+                    </div>
+                    <div class="col s12 m7 l7">
+                        <a class="teal-text text-lighten-5" href="./accessibility.html" target="_self"
+                            tabindex="0">Accesibilidad</a>
+                        <a class="right teal-text text-lighten-5" href="./web_map.html" target="_self" tabindex="0">Mapa
+                            web</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--Script menu movil + slider + carrousel-->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.sidenav');
+            var instances = M.Sidenav.init(elems);
+        });
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.slider');
+            var instances = M.Slider.init(elems, {
+                indicators: false,
+                height: 500,
+                duration: 500,
+                interval: 5000
+            })
+        });
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.carousel');
+            var instances = M.Carousel.init(elems, {
+                duration: 200,
+                indicators: true,
+                full_width: true
+            });
+        });
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.fixed-action-btn');
+            var instances = M.FloatingActionButton.init(elems);
+        });
+    </script>
+    <!--Kit para las fuentes-->
+    <script src="https://kit.fontawesome.com/35db202371.js" crossorigin="anonymous"></script>
+    <script src="./js/wallet.js"></script>
+</body>

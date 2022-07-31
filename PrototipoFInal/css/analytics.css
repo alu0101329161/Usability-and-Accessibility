@@ -1,0 +1,136 @@
+img {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+}
+
+
+.chartWithMarkerOverlay {
+  position: relative;
+  width: 700px;
+}
+
+.overlay-text {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 50px;
+  /* chartArea top  */
+  left: 200px;
+  /* chartArea left */
+}
+
+.overlay-marker {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 53px;
+  /* chartArea top */
+  left: 528px;
+  /* chartArea left */
+}
+
+
+/* icon prefix color */
+.input-field {
+  color: white;
+}
+
+/* icon prefix focus color */
+.input-field .prefix.active {
+  color: orange;
+}
+
+
+.highcharts-figure,
+.highcharts-data-table table {
+  min-width: 10em;
+  max-width: 100%;
+  margin: 1em auto;
+}
+
+#container {
+  height: 480px;
+}
+
+.highcharts-data-table table {
+  font-family: Verdana, sans-serif;
+  border-collapse: collapse;
+  border: 1px solid #ebebeb;
+  margin: 10px auto;
+  text-align: center;
+  width: 100%;
+  max-width: 50em;
+}
+
+.highcharts-data-table caption {
+  padding: 1em 0;
+  font-size: 1.2em;
+  color: white;
+}
+
+.highcharts-data-table th {
+  font-weight: 600;
+  padding: 0.5em;
+}
+
+.highcharts-data-table td,
+.highcharts-data-table th{
+  background: #181818;
+}
+.highcharts-data-table caption {
+  background: black;
+  padding: 0.5em;
+}
+
+.highcharts-data-table thead tr,
+.highcharts-data-table tr:nth-child(even) {
+  background: black;
+}
+
+
+
+
+
+
+.container2 {
+  height: 50em;
+  justify-content: center;
+}
+
+
+
+#container4 {
+  height: 40em;
+  width: 80%;
+  margin: auto;
+  justify-content: center !important;
+  align-items: center;
+
+}
+
+
+#container_mail {
+  width: 90%;
+  margin: auto;
+  justify-content: center !important;
+  align-items: center;
+
+}
+
+
+#Donuts {
+  height: 50em;
+  justify-content: left;
+}
+
+
+.inicio-text {
+  font-size: 1em !important;
+}
+
+@media only screen and (max-width: 400px) {
+  h1, h2, h3, h4, h5, h6 {
+      font-size: 2em !important;
+  }
+}

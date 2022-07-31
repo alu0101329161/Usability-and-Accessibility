@@ -1,0 +1,21 @@
+.card-image {
+  height: 350px;
+  width: auto;
+  overflow: hidden;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+.card-title {
+  color: white;
+}
+
+.prize {
+  font-size: 18px !important;
+}
+
+.tab-caption {
+  font-size: 20px;
+}

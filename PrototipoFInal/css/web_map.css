@@ -1,0 +1,63 @@
+body {
+    font-family: Georgia;
+}
+
+main {
+    background-color: gray;
+    padding-bottom: 4em;
+    padding-top: 2em;
+}
+
+.login {
+    background-color: rgba(255, 255, 255);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+        0 10px 10px rgba(0, 0, 0, 0.22);
+    position: relative;
+    padding-left: 2em;
+    padding-bottom: 1em;
+    padding-top: 1em;
+    margin-top: 2em;
+}
+
+a.orange-text:hover{
+    text-decoration-color: white;
+    background-color: white;
+}
+
+main {
+    padding-bottom: 4em;
+    padding-top: 2em;
+}
+
+.sub_li {
+    margin-left: 3em;
+}
+
+li.bullet {
+    margin-left: 1em;
+    font-size: x-large;
+}
+
+.bullet::before {
+    list-style-type: circle !important;
+    content: "\2022";
+    color: rgb(63, 63, 63);
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+.social-container {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-container a {
+    color: #ffff;
+    font-size: 35px;
+    margin: 0px 20px;
+}

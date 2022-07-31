@@ -1,0 +1,73 @@
+.social-container {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-container a {
+  color: #ffff;
+  font-size: 35px;
+  margin: 0px 20px;
+}
+
+.brand-logo {
+  font-size: 25px !important;
+  margin-left: 20px;
+  overflow: hidden !important;
+}
+
+.nav-wrapper {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+    0 10px 10px rgba(0, 0, 0, 0.22);
+  overflow: hidden;
+}
+
+.miga {
+  margin-top: 20px;
+}
+
+th {
+  color: black;
+}
+
+td {
+  color: black;
+}
+
+.register-td {
+  color: white;
+  font-size: 18px;
+}
+
+.register-th {
+  color: orange;
+  font-size: 20px;
+}
+
+/* icon prefix color */
+.input-field {
+  color: white;
+}
+
+/* icon prefix focus color */
+.input-field .prefix.active {
+  color: orange;
+}
+
+#errorCorreo {
+  font-size: 15px;
+}
+
+#errorNacimiento{
+  font-size: 15px;
+}
+
+#errorNombre{
+  font-size: 15px;
+}
+
+#errorApellido{
+  font-size: 15px;
+}

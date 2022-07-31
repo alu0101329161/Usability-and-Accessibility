@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <!--jQuery-->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Iconos favicon -->
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <!-- Fuente Google -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="./css/style.css" rel="stylesheet">
+  <link href="./css/register.css" rel="stylesheet">
+  <title>Registro</title>
+</head>
+
+<body>
+  <!--Barra de navegación-->
+  <header>
+    <div class="navbar-fixed">
+      <nav role>
+        <div class="nav-wrapper grey darken-4">
+          <a tabindex="0" href="./index.html" class="brand-logo">
+            <i class="material-icons" aria-hidden="true">code</i>
+            Ruby's Crypto
+          </a>
+
+          <a href="javascript:;" data-target="mobile-demo" class="sidenav-trigger" target="_self"><i
+              class="material-icons">menu</i></a>
+
+          <!--Barra de navegación PC-->
+          <ul class="right hide-on-med-and-down" role="navigation">
+            <li><a href="./wallet.html">Monedero Electrónico</a></li>
+            <li><a href="./news.html">Noticias</a></li>
+            <li><a href="./market.html">Mercado</a></li>
+            <li><a href="./analytics.html">Analíticas</a></li>
+            <li><a href="./register.html">Registrarse</a></li>
+            <li><a href="./about_us.html" class="btn white black-text waves-effect waves-blue-grey lighten-1"
+                role="button" aria-label="Sobre Nosotros">Sobre nosotros</a></li>
+            <!--Agregamos elemnto a la tabulacion + role + label-->
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div>
+      <!--Barra de navegación Móvil-->
+      <ul id="mobile-demo" class="sidenav" tabindex="-1">
+        <li><a aria-expanded="false" tabindex="-1" target="_self" href="./wallet.html">Monedero Electrónico</a></li>
+        <li><a aria-expanded="false" tabindex="-1" target="_self" href="./news.html">Noticias</a></li>
+        <li><a aria-expanded="false" tabindex="-1" target="_self" href="./market.html">Mercado</a></li>
+        <li><a aria-expanded="false" tabindex="-1" target="_self" href="./analytics.html">Analíticas</a></li>
+        <li><a aria-expanded="false" tabindex="-1" target="_self" href="./register.html">Registrarse</a></li>
+        <li><a aria-expanded="false" tabindex="-1" target="_self" href="./about_us.html"
+            class="btn black white-text waves-effect waves-blue-grey lighten-1" role="button"
+            aria-label="Sobre Nosotros">Sobre nosotros</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+
+
+    <!-- Breadcrumbs -->
+    <div class="container">
+      <div class="row">
+        <nav class="miga">
+          <div class="nav-wrapper">
+            <div class="col s12 m12 l12 grey darken-3">
+              <a href="index.html" target="_self" class="breadcrumb" tabindex="0">Inicio</a>
+              <a href="register.html" target="_self" class="breadcrumb" tabindex="0">Registro</a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <div class="container grey darken-4">
+      <!-- CONTAINER -->
+      <h1 tabindex="0" class="center-align">Registrarse</h1>
+      <p tabindex="0" class="flow-text center-align">¡Regístrate y únete a la expansiva comunidad del cripto!</p>
+        <!-- FORM -->
+      <form method="post" id="registro">
+        <div class="row">
+          <div class="input-field col s12 m12 l6 x6">
+            <i aria-hidden="true" class="material-icons prefix">account_circle</i>
+            <input class="white" type="text" name="nombres" id="nombres" aria-label="Nombre del usuario">
+            <label for="nombres">Nombre</label>
+            <p class="red-text text-darken-3" id="errorNombre"></p>
+          </div>
+          <div class="input-field col s12 m12 l6 x6">
+            <i aria-hidden="true" class="material-icons prefix">account_circle</i>
+            <input class="white" type="text" name="apellidos" id="apellidos" aria-label="Apellido del usuario">
+            <label for="apellidos">Apellidos</label>
+            <p class="red-text text-darken-3" id="errorApellido"></p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12 m12 l6 x6">
+            <i aria-hidden="true" class="material-icons prefix">date_range</i>
+            <input class="white" id="fecha_nacimiento" type="text" class="datepicker">
+            <label for="fecha_nacimiento">Fecha de nacimiento</label>
+          </div>
+          <div class="input-field col s12 m12 l6 x6">
+            <i aria-hidden="true" class="material-icons prefix">directions</i>
+            <input class="white" type="text" name="lugar_nacimiento" id="lugar_nacimiento" aria-label="Lugar de nacimiento">
+            <label for="lugar_nacimiento">Lugar de nacimiento</label>
+            <p class="red-text text-darken-3" id="errorNacimiento"></p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12 l12 m12 x12">
+            <i aria-hidden="true" class="center-align material-icons prefix">email</i>
+            <input class="white" type="text" name="correo" id="correo" aria-label="Correo electrónico">
+            <label for="correo">Correo</label>
+            <p class="red-text text-darken-3" id="errorCorreo"></p>
+          </div>
+        </div>
+        <div class="center-align">
+          <button role="button" type="submit" class="btn waves-effect grey darken-3 orange-text">
+            <i aria-hidden="true" class="material-icons right">check</i>
+            Registrarse
+          </button>
+        </div>
+      </form>
+    </div> <!-- CONTAINER -->
+
+    <!--Mostrar usuarios-->
+    <div class="container grey darken-4 center-align" id="User-Container">
+      <h2 tabindex="0">Usuarios registrados:</h2>
+      <div class="row" aria-live="polite">
+        <div class="col s12 m12 l12">
+          <table role="table" class="center striped" id="User-table">
+            <thead tabindex="0">
+              <tr>
+                <th class="register-th" scope="col">Name</th>
+                <th class="register-th" scope="col">Email</th>
+              </tr>
+            </thead>
+          </table>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+
+  <!--Botón de accesibilidad-->
+  <div class="fixed-action-btn">
+    <a href="#" class="btn-floating btn-large blue-grey darken-1 pulse" role="button" aria-label="Subir arriba">
+        <i tabindex="0" role="button" class="large material-icons" aria-hidden="true">arrow_upward</i>
+    </a>
+</div>
+
+
+  <!-- Footer -->
+  <footer class="page-footer grey darken-4">
+    <div class="container">
+      <div class="row">
+        <div class="col s12 m7 l6 center-align">
+          <h5 class="teal-text text-lighten-5" tabindex="0"><b>Colaboradores</b></h5>
+          <ul>
+            <li><a class="grey-text text-lighten-5" href="" target="_blank" tabindex="0">Joseph Gabino Rodríguez</a>
+            </li>
+            <li><a class="grey-text text-lighten-5" href="" target="_blank" tabindex="0">Vlatko Jesús Marchán
+                Sekulic</a></li>
+            <li><a class="grey-text text-lighten-5" href="" target="_blank" tabindex="0">Tanausú Falcón Casanova</a>
+            </li>
+            <li><a class="grey-text text-lighten-5" href="" target="_blank" tabindex="0">Ian Vera Labrin</a></li>
+          </ul>
+        </div>
+        <div class="col s12 m5 l4 center-align">
+          <h5 class="teal-text text-lighten-5" tabindex="0"><b>Redes sociales</b></h5>
+          <div class="social-container center">
+            <a href="https://www.facebook.com/universidaddelalaguna" target="_blank" tabindex="0"
+              aria-label="Link para compartir en Facebook"><i class="fab fa-facebook-square"></i></a>
+            <a href="https://twitter.com/ULL" tabindex="0" target="_blank"
+              aria-label="Link para compartir en Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com/ULL" tabindex="0" target="_blank"
+              aria-label="Link para compartir en Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/school/universidad-de-la-laguna" tabindex="0" target="_blank"
+              aria-label="Link para compartir en youtube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright teal-text text-lighten-4 grey darken-3">
+      <div class="container">
+        <div class="row">
+          <div class="col s12 m5 l5 center-align" tabindex="0">
+            © 2022 Copyright
+          </div>
+          <div class="col s12 m7 l7">
+            <a class="teal-text text-lighten-5" href="./accessibility.html" target="_self"
+              tabindex="0">Accesibilidad</a>
+            <a class="right teal-text text-lighten-5" href="./web_map.html" target="_self" tabindex="0">Mapa web</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <!--Kit para las fuentes-->
+  <script src="https://kit.fontawesome.com/35db202371.js" crossorigin="anonymous"></script>
+  <!--JavaScript at end of body for optimized loading-->
+  <script src="./js/ajax.js"></script>
+  <script type="module" src="./js/register.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var elems = document.querySelectorAll('.sidenav');
+      var instances = M.Sidenav.init(elems);
+    });
+  </script>
+</body>
+
+</html>
